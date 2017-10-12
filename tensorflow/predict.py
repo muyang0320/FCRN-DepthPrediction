@@ -60,7 +60,7 @@ def predict(model_data_path, image_path):
         origin = plt.imshow(origin, interpolation='nearest')
         plt.savefig('test_origin.png')
 
-        ii = plt.imshow(pred[0,:,:,:], interpolation='nearest')
+        ii = plt.imshow(pred[0,:,:,0], interpolation='nearest')
         fig.colorbar(ii)
         plt.savefig('test_result.png')
 
